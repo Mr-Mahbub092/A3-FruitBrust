@@ -19,6 +19,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'title-color': '#121212',
+            'description-color': 'rgba(18, 18, 18, 0.60',
           }
         }
       }
@@ -30,6 +32,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome icon -->
+  <script src="https://kit.fontawesome.com/1b66411b6a.js" crossorigin="anonymous"></script>
 
   <!-- Custom Styles -->
   <style>
@@ -39,6 +43,7 @@
   </style>
 
 
+
  
   
 
@@ -46,6 +51,218 @@
 
 <body class="font-lato">
  
+  <header class="container">
+
+  </header>
+  <main class="container mx-auto">
+   
+
+
+<!-- Deal of the Day Section
+============================= -->
+<section class="space-y-16 px-3 md:px-6 lg:px-8">
+  <div class="flex flex-col lg:flex-row items-center  lg:justify-between w-full ">
+    <div class="block text-center lg:text-left lg:pr-12 xl:pr-24">
+      <h2 class="text-3xl md:text-4xl font-bold">Deal of the day</h2>
+      <p class="text-base xl:text-xl my-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+    </div>
+
+    <!-- Countdown -->
+    <div class="lg:flex justify-end">
+      <div class="grid grid-flow-col gap-3 text-center auto-cols-max">
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-4xl">
+            <span style="--value:15;"></span>
+          </span>
+          days
+        </div> <img src="./icons/3-vertical-dots-icon.png" alt="" class="w-1 h-auto pt-2.5">
+
+
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-4xl">
+            <span style="--value:10;"></span>
+          </span>
+          hours
+        </div> <img src="./icons/3-vertical-dots-icon.png" alt="" class="w-1 h-auto pt-2.5">
+
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-4xl">
+            <span style="--value:24;"></span>
+          </span>
+          min
+        </div> <img src="./icons/3-vertical-dots-icon.png" alt="" class="w-1 h-auto pt-2.5">
+
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-4xl">
+            <span style="--value:4;"></span>
+          </span>
+          sec
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards 
+  --------------->
+  <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <!-- card 01 -->
+    <div class="card bg-[rgba(18, 18, 18, 0.10)] border-2 border-gray-200 rounded-lg ">
+      <figure class="px-10 pt-8">
+        <img src="./images/fruit6.png" alt="Apple" class="max-w-[105px]" />
+      </figure>
+      <div class="card-body items-center text-center space-y-4">
+        <h2 class="card-title title-color text-xl lg:text-base font-bold">12.90$ - 18.85$</h2>
+
+        <hr class="w-3/4">
+        <p class="description-color font-medium">Apples</p>
+        <!-- Ratings -->
+        <div class="rating rating-lg rating-half max-w-[160px]">
+          <input type="radio" name="rate-apple" class="rating-hidden" />
+          <input type="radio" name="rate-apple" class="bg-rose-500 mask mask-star-2 mask-half-1 " />
+          <input type="radio" name="rate-apple" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rate-apple" class="bg-rose-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rate-apple" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rate-apple" class="bg-rose-500 mask mask-star-2 mask-half-1"/>
+          <input type="radio" name="rate-apple" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rate-apple" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rate-apple" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rate-apple" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rate-apple" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+        </div>
+        <a href="#" class="text-rose-500 text-base font-bold">Details</a>
+       
+      </div>
+    </div>
+    <!-- card 02 -->
+    <div class="card bg-[rgba(18, 18, 18, 0.10)] border-2 border-gray-200 rounded-lg ">
+      <figure class="px-10 pt-8">
+        <img src="./images/Malta2.png" alt="Apple" class="max-w-[105px]" />
+      </figure>
+      <div class="card-body items-center text-center space-y-4">
+        <h2 class="card-title title-color text-xl lg:text-base font-bold">12.90$ - 18.85$</h2>
+
+        <hr class="w-3/4">
+        <p class="description-color font-medium">Orange</p>
+        <!-- Ratings -->
+        <div class="rating rating-lg rating-half max-w-[160px]">
+          <input type="radio" name="ratings" class="rating-hidden" />
+          <input type="radio" name="ratings" class="bg-rose-500 mask mask-star-2 mask-half-1 " />
+          <input type="radio" name="ratings" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="ratings" class="bg-rose-500 mask mask-star-2 mask-half-1"/>
+          <input type="radio" name="ratings" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="ratings" class="bg-rose-500 mask mask-star-2 mask-half-1"/>
+          <input type="radio" name="ratings" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" checked />
+          <input type="radio" name="ratings" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="ratings" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="ratings" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="ratings" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+        </div>
+        <a href="#" class="text-rose-500 text-base font-bold">Details</a>
+       
+      </div>
+    </div>
+    <!-- card 03 -->
+    <div class="card bg-[rgba(18, 18, 18, 0.10)] border-2 border-gray-200 rounded-lg ">
+      <figure class="px-10 pt-8">
+        <img src="./images/dragons.png" alt="Apple" class="max-w-[105px]" />
+      </figure>
+      <div class="card-body items-center text-center space-y-4">
+        <h2 class="card-title title-color text-xl lg:text-base font-bold">12.90$ - 18.85$</h2>
+
+        <hr class="w-3/4">
+        <p class="description-color font-medium">Red Dragon</p>
+        <!-- Ratings -->
+        <div class="rating rating-lg rating-half max-w-[160px]">
+          <input type="radio" name="rate" class="rating-hidden" />
+          <input type="radio" name="rate" class="bg-rose-500 mask mask-star-2 mask-half-1 " />
+          <input type="radio" name="rate" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rate" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rate" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rate" class="bg-rose-500 mask mask-star-2 mask-half-1" checked/>
+          <input type="radio" name="rate" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rate" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rate" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rate" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rate" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+        </div>
+        <a href="#" class="text-rose-500 text-base font-bold">Details</a>
+       
+      </div>
+    </div>
+    <!-- card 04 -->
+    <div class="card bg-[rgba(18, 18, 18, 0.10)] border-2 border-gray-200 rounded-lg ">
+      <figure class="px-10 pt-8">
+        <img src="./images/bananas.png" alt="Apple" class="max-w-[105px]" />
+      </figure>
+      <div class="card-body items-center text-center space-y-4">
+        <h2 class="card-title title-color text-xl lg:text-base font-bold">12.90$ - 18.85$</h2>
+
+        <hr class="w-3/4">
+        <p class="description-color font-medium">Banana</p>
+        <!-- Ratings -->
+        <div class="rating rating-lg rating-half max-w-[160px]">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1 " />
+          <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" checked/>
+          <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+          <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2 mr-2" />
+        </div>
+        <a href="#" class="text-rose-500 text-base font-bold">Details</a>
+       
+      </div>
+    </div>
+  
+
+
+  </div>
+
+  <div class="text-center">
+    <button class="btn font-bold px-8 bg-[#F85559] text-white border-none">Shop All</button>
+  </div>
+
+</section>
+
+
+ 
+
+  </main>
+
+<!-- Footer Section
+====================== -->
+  <footer class="footer mt-32 footer-center px-8 md:px-10 py-10 md:py-20 lg:py-32 bg-gray-900 text-base-content rounded">
+    <div class="flex justify-center">
+      <img src="./images/logo.png" alt="Fruit Brust's Logo" class="w-8 md:w-12 h-auto">
+      <h2 class="text-white text-3xl md:text-4xl font-bold">Fruit Brust</h2>
+    </div>
+
+
+    <div class="flex flex-wrap gap-4 md:gap-8 text-white justify-center text-sm lg:text-lg">
+      <a class="link link-hover">Home</a> 
+      <a class="link link-hover">About us</a> 
+      <a class="link link-hover">Shop</a> 
+      <a class="link link-hover">All Fruits</a> 
+      <a class="link link-hover">Support</a>
+      <a class="link link-hover">My Account</a>
+    </div> 
+
+      <!-- Social Icons
+      ---------------------- -->
+      <div class="grid grid-flow-col gap-4 md:gap-8 items-center justify-center">
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" class="fill-current text-white"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" class="fill-current text-white"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" class="fill-current text-white"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+        <a><i class="fa-brands fa-linkedin-in text-white text-3xl"></i></a>
+        <a><i class="fa-brands fa-instagram text-white text-3xl"></i></a>
+        <a><i class="fa-brands fa-apple text-white text-3xl"></i></a>
+      </div>
+  
+  </footer>
 
 
 
